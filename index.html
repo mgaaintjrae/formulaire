@@ -17,45 +17,47 @@
         04 ou 05 ou 06 ou 07 ou 09. 
         - Gestion de l'affichages des erreur et gestion du onBlur. 
         - Pas de gestion des erreurs intégré au navigateur" -->
-    <h1>Formulaire de contact</h1>
 
     <form>
+        <h1>Formulaire de contact</h1>
 
-        <fieldset>
-            <legend>Vos Coordonnées</legend> <!-- Titre du fielset -->
-            <div class="">
-                <input class="nom" id="name" type="text" placeholder="Nom *">
-            </div>
-            <div class="">
-                <input class="prenom" id="usernam" type="text" placeholder="Prénom *">
-            </div>
+       
+        <fieldset id="coordonnees">
+            <legend>Vos Coordonnées</legend> <!-- Titre du fieldset -->
+            <p>Les champs avec * sont obligatoires</p>
+            
+                <input  name="name" id="name" type="text" onblur="verifName(this)" placeholder="Nom *">
+                
+            
+                <input  name="username" id="usernam" type="text"  onblur="verifUsername(this)" placeholder="Prénom *">
+                
+            
+                <input  name="email" id="email" type="email" onblur="verifEmail(this)" placeholder="Email *">
+                
+           
+                <input  name="tel" id="tel" type="tel" onblur="verifTel(this)" placeholder="Téléphone *" >
+                
+            
+                <input  name="rue" id="rue" type="text" placeholder="Rue *">
+                
+            
+                <input  name="cp" id="cp" type="text" placeholder="Code Postal *">
+                
+            
+                <input  name="ville" id="ville" type="text" placeholder="Ville *">
+                
+           
 
-            <div class="">
-                <input class="mail" id="email" type="email" placeholder="Email *">
-            </div>
-            <div class="">
-                <input class="tel" id="tel" type="tel" placeholder="Téléphone *">
-            </div>
-            <div class="">
-                <input class="rue" id="rue" type="text" placeholder="Rue *">
-            </div>
-            <div class="">
-                <input class="cp" id="cp" type="text" placeholder="Code Postal *">
-            </div>
-            <div class="">
-                <input class="ville" id="ville" type="text" placeholder="Ville *">
-            </div>
         </fieldset>
 
-        <fieldset>
+        <fieldset id="message">
             <legend>N'hésitez pas à me laisser un message</legend>
-                <div class="">
-                        <!-- <label for="message">N'hésitez pas à me laisser un message :</label><br> -->
-                        <textarea class="message" id="message" placeholder="Message *"></textarea>
-                    </div>
-        </fieldset>        
+            
+                <textarea class="message" placeholder="Message *" rows="10" cols="50"></textarea>
+            
+        </fieldset>
 
-        <div class="">
+        <div id="envoyer">
             <button class="envoyer" id="envoyer" type="submit">Envoyer</button>
         </div>
 

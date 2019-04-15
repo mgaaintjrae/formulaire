@@ -1,15 +1,60 @@
-h1 {
-text-align: center;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px black solid;
-    background-color: teal;
+    background-color: rgba(28, 124, 110, 0.7);
+
 }
-  
-div{
-    margin: 5%;
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+legend {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+#coordonnees {
+    padding: 5% 24% 5% 24%;
+    margin: 5% 8% 0% 8%;
+    border-style: dotted;
+    border-color: teal;
+}
+
+#message {
+    padding: 5% 21% 5% 21%;
+    margin-top: 3%;
+    border-style: dotted;
+    border-color: teal;
+}
+
+
+input {
+    margin: 2%;
+    padding: 3% 30% 3% 5%;
+}
+
+#envoyer {
+    margin-top: 3%;
+}
+
+#envoyer:hover {
+    font-weight: bold;
+}
+
+button {
+    padding: 10% 30% 10% 30%;
 }
