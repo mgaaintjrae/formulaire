@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- "- Intégrer un formulaire avec les champs suivants : 
+        Nom, Prénom, email, téléphone, rue, cp, ville et message. 
+        - Tous les champs sont obligatoire et vérifier l'email + téléphone
+         avec ou sans espace et commencant bien par 01 ou 02 ou 03 ou 
+        04 ou 05 ou 06 ou 07 ou 09. 
+        - Gestion de l'affichages des erreur et gestion du onBlur. 
+        - Pas de gestion des erreurs intégré au navigateur" -->
+    <h1>Formulaire de contact</h1>
+
+    <form>
+
+        <fieldset>
+            <legend>Vos Coordonnées</legend> <!-- Titre du fielset -->
+            <div class="">
+                <input class="nom" id="name" type="text" placeholder="Nom *">
+            </div>
+            <div class="">
+                <input class="prenom" id="usernam" type="text" placeholder="Prénom *">
+            </div>
+
+            <div class="">
+                <input class="mail" id="email" type="email" placeholder="Email *">
+            </div>
+            <div class="">
+                <input class="tel" id="tel" type="tel" placeholder="Téléphone *">
+            </div>
+            <div class="">
+                <input class="rue" id="rue" type="text" placeholder="Rue *">
+            </div>
+            <div class="">
+                <input class="cp" id="cp" type="text" placeholder="Code Postal *">
+            </div>
+            <div class="">
+                <input class="ville" id="ville" type="text" placeholder="Ville *">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>N'hésitez pas à me laisser un message</legend>
+                <div class="">
+                        <!-- <label for="message">N'hésitez pas à me laisser un message :</label><br> -->
+                        <textarea class="message" id="message" placeholder="Message *"></textarea>
+                    </div>
+        </fieldset>        
+
+        <div class="">
+            <button class="envoyer" id="envoyer" type="submit">Envoyer</button>
+        </div>
+
+
+    </form>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
