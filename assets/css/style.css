@@ -46,7 +46,29 @@ input {
     margin: 2%;
     padding: 3% 30% 3% 5%;
 }
-
+ input:invalid{
+     box-shadow: 0 0 5px 1px #fba;
+ }
+ input:valid{
+     border: 2px solid teal;
+ }
+/* Voici la mise en forme pour les erreurs */
+#erreurNom {
+    width  : 100%;
+    padding: 0;
+   
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+   
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+span{
+    color: red;
+}
 #envoyer {
     margin-top: 3%;
 }

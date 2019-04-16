@@ -18,7 +18,7 @@
         - Gestion de l'affichages des erreur et gestion du onBlur. 
         - Pas de gestion des erreurs intégré au navigateur" -->
 
-    <form>
+    <form id="myForm">
         <h1>Formulaire de contact</h1>
 
        
@@ -26,26 +26,26 @@
             <legend>Vos Coordonnées</legend> <!-- Titre du fieldset -->
             <p>Les champs avec * sont obligatoires</p>
             
-                <input  name="name" id="name" type="text" onblur="verifName(this)" placeholder="Nom *">
-                
+                <input  name="lastName" id="lastName" type="text"  placeholder="Nom *" >
+                <span id="erreurLastName"></span>
             
-                <input  name="username" id="usernam" type="text"  onblur="verifUsername(this)" placeholder="Prénom *">
-                
+                <input  name="name" id="name" type="text"   placeholder="Prénom *">
+                <span id="erreurName"></span>
             
-                <input  name="email" id="email" type="email" onblur="verifEmail(this)" placeholder="Email *">
-                
+                <input  name="email" id="email" type="email"  placeholder="Email *">
+                <span id="erreurEmail"></span>
            
-                <input  name="tel" id="tel" type="tel" onblur="verifTel(this)" placeholder="Téléphone *" >
-                
+                <input  name="tel" id="tel" type="tel"  placeholder="Téléphone *" >
+                <span id="erreurTel"></span>
             
                 <input  name="rue" id="rue" type="text" placeholder="Rue *">
-                
+                <span id="erreurRue"></span>
             
                 <input  name="cp" id="cp" type="text" placeholder="Code Postal *">
-                
+                <span id="erreurCp"></span>
             
                 <input  name="ville" id="ville" type="text" placeholder="Ville *">
-                
+                <span id="erreurVille"></span>
            
 
         </fieldset>
@@ -63,6 +63,7 @@
 
 
     </form>
+
 
     <script src="assets/js/script.js"></script>
 </body>
